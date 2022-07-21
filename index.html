@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <script src="myScript.js"></script>
+        <title>CS50x webtrack - home</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header" class="container" role="navigation">
+                <ul class="nav nav-tabs justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculate.html">Calculate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="comment.html">Comment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content container">
+                <h1>Ticket System</h1>
+                <h2>IT Ticket System for My School</h2>
+                <p>If you're having trouble with something IT related, be it hardware or software, open a ticket and the person responsible for that field will take care of it.</p>
+                <form>
+                    <label>Name:</label><br>
+                    <input type="text" id="name" name="name"><!-- look up name for logged in user --><br><br>
+                    <label>Which field is your problem associated with?</label>
+                    <select id="field">
+                        <!-- populate from db -->
+                    </select>
+                    <button type="button" onclick="create_ticket()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="container" id="footer">&copy; 2022 Temptracks</div>
+    </body>
+</html>
